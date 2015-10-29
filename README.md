@@ -41,6 +41,6 @@ $("#NewDiv").hide();
 ```
 
 ### Small
-Elemental.min.js takes up 2.3 KB and without the manual it only takes up 420 Bytes.
-See ElementalNm.min.js. Much smaller than most other library.
+Elemental.min.js takes up about 2.5 KB and without the manual it only takes up about 500 Bytes.
+See ElementalNm.min.js. Much smaller than many other libraries.
 ###### This library may be updated and become larger.

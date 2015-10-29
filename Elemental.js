@@ -1,22 +1,22 @@
 // Licensed under the MIT public license v1.0
-// GitHub.com/AppIns/easy.js
+// GitHub.com/AppIns/Elemental.js
 
-// Easy and fast DOM editing
+// Manipulate DOM like a pro
 
 // Display instructions for first time use
 
-//New DOM element and object to call functions and set properties with
+// New DOM element and object to call functions and set properties with
 function Element (type) {
   this.type = type;
   this.element = document.createElement(this.type);
 }
 
-//Define where the element is in the document
+// Define where the element is in the document
 Element.prototype.eAppendTo = function eAppendTo (el) {
 	el.appendChild(this.element);
 };
 
-//Define ID and Classes of your element
+// Define ID and Classes of your element
 Element.prototype.eIdentify = function eIdentify (id, classes) {
 	if(id) {
 		this.element.id = id;
@@ -26,14 +26,19 @@ Element.prototype.eIdentify = function eIdentify (id, classes) {
 	}
 };
 
-//Set other properties of your element
+// Set other properties of your element
 Element.prototype.eProperty = function eProperty (prop, val) {
 	this.element[prop] = val;
 };
 
-//Style element
+// Style element
 Element.prototype.eStyle = function eStyle (styleName, val) {
 	this.element.style[styleName] = val;
+};
+
+//
+Element.prototype.eAddChild = function (chil) {
+  this.element.appendChild(chil);
 };
 
 //CSS selector
