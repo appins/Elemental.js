@@ -1,4 +1,4 @@
-# ElementalJS v0.0.1
+# ElementalJS v0.0.2
 
 #### a DOM Manipulation library, simple and to the point
 
