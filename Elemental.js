@@ -48,8 +48,15 @@ Element.prototype.eStyle = function eStyle (styleName, val) {
 };
 
 // Add a child to the element
-Element.prototype.eAddChild = function (chil) {
+Element.prototype.eAddChild = function eAddChild (chil) {
   this.element.appendChild(chil);
+};
+
+// Quickly configure an element
+Element.prototype.eQuick = function eQuick (nid, loc, inner) {
+  this.element.id = nid;
+  this.element.innerHTML = inner;
+  loc.appendChild(this.element);
 };
 
 // CSS selector

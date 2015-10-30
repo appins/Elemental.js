@@ -69,7 +69,16 @@ var y = new Element("#showcase");
 var class = y.eReturn("className");
 ```
 
+Quickly configure an element
+```javascript
+// Create a new instance of Element
+var quick = new Element("P");
+  // Set the id to "myid" append it to document.body and put "It Works!"
+  // inside of the tags
+  quick.eQuick("myid", document.body, "It Works!");
+```
+
 ### Our library is small
-Elemental.min.js takes up about 2.5 KB and without the manual it only takes up about 700 Bytes.
+Elemental.min.js takes up about 2.6 KB and without the manual it only takes up about 800 Bytes.
 See ElementalNm.min.js. Much smaller than many other libraries.
 ###### This library may be updated and become larger.
