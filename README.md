@@ -80,6 +80,13 @@ var quick = new Element("P");
   quick.eQuick("myid", document.body, "It Works!");
 ```
 
+You can even chain commands together
+```javascript
+// Create a div and apply it to body, set id to "Chain"
+new Element("DIV").eIdentify("Chain", undefined).eAppendTo(document.body);
+// Set some text inside the DIV to say "chain"
+new Element("P").eAppendTo(eSel("#Chain")).eProperty("innerHTML", "Chain");
+```
 ### Our library is small
 Elemental.min.js takes up about 2.6 KB and without the manual it only takes up about 800 Bytes.
 See ElementalNm.min.js. Much smaller than many other libraries.
