@@ -8,6 +8,8 @@
 ```html
 <head>
 <!-- NOTE: We recommend Elemental.min.js for faster load times -->
+<!-- NOTE: The default Elemental.js file can be found in lib, the smaller ones
+can be found in min -->
 <script src="Elemental.min.js"></script>
 <script src="YourScriptFile.js"></script>
 </head>
