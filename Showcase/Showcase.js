@@ -18,7 +18,7 @@ window.onload = function(){
     showcase.eStyle("textAlign", "center");
     showcase.eIdentify("ShowcaseEl", undefined);
   var jsIMG = new Element("IMG");
-    jsIMG.eProperty("src", "extra/IMG/JavaScript.png");
+    jsIMG.eProperty("src", "Showcase/IMG/JavaScript.png");
     jsIMG.eAppendTo(eSel("#ShowcaseEl"));
     jsIMG.eStyle("width", "70px");
     jsIMG.eStyle("height", "70px");
