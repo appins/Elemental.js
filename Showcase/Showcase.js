@@ -31,4 +31,7 @@ window.onload = function(){
   new Element("CODE").eQuick("Ins2", eSel("#ShowcaseEl"), "&lt;scirpt src=\"Elemental.min.js\"&gt;&lt;/script&gt;");
   new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
   new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
+  new Element("A").eQuick("link", eSel("#ShowcaseEl"), "GitHub").eProperty("href", "https://github.com/AppIns/Elemental.js").eStyle("color", "#606060");
+  new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
+  new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
 }
