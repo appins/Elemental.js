@@ -11,11 +11,12 @@
 <!-- NOTE: The default Elemental.js file can be found in lib, the smaller ones
 can be found in min -->
 <script src="Elemental.min.js"></script>
-<script src="YourScriptFile.js"></script>
+<script src="SomeFile.js"></script>
 </head>
 ```
 
-### Example:
+### Features:
+* Overview
 ```javascript
 // Create NewDiv
 var NewDiv = new Element("DIV");
@@ -29,11 +30,12 @@ var NewP = new Element("P");
   NewP.eAppendTo(eSel("#NewDiv"));
   // Set innerHTML to example
   NewP.eProperty("innerHTML", "Example");
+  // Please note, some features are not listed here
 ```
 will create a new div with the id NewDiv and append a p element to it, with the text "Example"
 
 
-interacts well with HTML, jQuery, and CSS
+* Interacts well with HTML, jQuery, and CSS
 ```javascript
 // Create a new div
 var NewDiv = new Element("DIV");
@@ -45,14 +47,14 @@ $("#NewDiv").hide();
 ```
 
 ```CSS
-/* NOTE: Css can interact with the class */
+/* NOTE: CSS can interact with the class */
 .DivClass {
   text-align: center;
   font-size: 20px;
 }
 ```
 
-Create a new Element() from an existing one
+* Create a `new Element()` from an existing one
 ```javascript
 // Get the element with the id "textelement"
 // THIS ONLY WORKS WITH IDS!
@@ -72,7 +74,7 @@ var y = new Element("#showcase");
 var class = y.eReturn("className");
 ```
 
-Quickly configure an element
+* Quickly configure an element
 ```javascript
 // Create a new instance of Element
 var quick = new Element("P");
@@ -81,13 +83,13 @@ var quick = new Element("P");
   quick.eQuick("myid", document.body, "It Works!");
 ```
 
-Delete an element
+* Delete an element
 ```javascript
 // Delete #mydiv
 new Element("#mydiv").eDelete();
 ```
 
-You can even chain commands together
+* Chaining commands together
 ```javascript
 // Create a div and apply it to body, set id to "Chain"
 new Element("DIV").eIdentify("Chain", undefined).eAppendTo(document.body);
@@ -98,3 +100,5 @@ new Element("P").eAppendTo(eSel("#Chain")).eProperty("innerHTML", "Chain");
 Elemental.min.js takes up about 3 KB and without the manual it only takes up about 1000 Bytes.
 See ElementalNm.min.js. Much smaller than many other libraries.
 ###### This library may be updated and become larger.
+
+Need help? Email me: AlexAndersonOne@gmail.com
