@@ -55,6 +55,7 @@ $("#NewDiv").hide();
 Create a new Element() from an existing one
 ```javascript
 // Get the element with the id "textelement"
+// THIS ONLY WORKS WITH IDS!
 var i = new Element("#textelement");
   // Set the innerHTML (text between tags)
   i.eProperty("innerHTML", "I have changed everything!");
@@ -80,6 +81,12 @@ var quick = new Element("P");
   quick.eQuick("myid", document.body, "It Works!");
 ```
 
+Delete an element
+```javascript
+// Delete #mydiv
+new Element("#mydiv").eDelete();
+```
+
 You can even chain commands together
 ```javascript
 // Create a div and apply it to body, set id to "Chain"
@@ -88,6 +95,6 @@ new Element("DIV").eIdentify("Chain", undefined).eAppendTo(document.body);
 new Element("P").eAppendTo(eSel("#Chain")).eProperty("innerHTML", "Chain");
 ```
 ### Our library is small
-Elemental.min.js takes up about 2.6 KB and without the manual it only takes up about 800 Bytes.
+Elemental.min.js takes up about 3 KB and without the manual it only takes up about 1000 Bytes.
 See ElementalNm.min.js. Much smaller than many other libraries.
 ###### This library may be updated and become larger.
