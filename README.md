@@ -98,7 +98,7 @@ new Element("P").eAppendTo(eSel("#Chain")).eProperty("innerHTML", "Chain");
 ```
 ### Our library is small
 Elemental.min.js takes up about 3 KB and without the manual it only takes up about 1000 Bytes.
-See ElementalNm.min.js. Much smaller than many other libraries.
+See Elemental.nomanual.min.js. Much smaller than many other libraries.
 ###### This library may be updated and become larger.
 
-Need help? Email me: AlexAndersonOne@gmail.com
+Need help? Found a bug? Email me: AlexAndersonOne@gmail.com
