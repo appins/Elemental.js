@@ -30,7 +30,9 @@ var NewP = new Element("P");
   NewP.eAppendTo(eSel("#NewDiv"));
   // Set innerHTML to example
   NewP.eProperty("innerHTML", "Example");
-  // Please note, some features are not listed here
+// Do this all with one line
+new Element("P").eAppendTo(eSel("#NewDiv")).eProperty("innerHTML", "Example");
+  // Please note, some newer features are not listed here
 ```
 will create a new div with the id NewDiv and append a p element to it, with the text "Example"
 
