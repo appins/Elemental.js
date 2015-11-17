@@ -34,4 +34,4 @@ window.onload = function(){
   new Element("A").eQuick("link", eSel("#ShowcaseEl"), "GitHub").eProperty("href", "https://github.com/AppIns/Elemental.js").eStyle("color", "#606060");
   new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
   new Element("BR").eAppendTo(eSel("#ShowcaseEl"));
-}
+};
